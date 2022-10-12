@@ -16,7 +16,7 @@ function makeGrid() {
 
 function makeRows(rowNum) {
     //create rows
-    for (r = 0 ; r < rowNum ; r++) {
+    for (let r = 0 ; r < rowNum ; r++) {
         let row = document.createElement('div'); //create the rows div 
         row.classList.add('gridRow'); //add the 'gridRow' class name to row
         container.appendChild(row); //append row to the container
@@ -26,8 +26,8 @@ function makeRows(rowNum) {
 //Creates columns
 
 function makeColumns(cubNum) {
-    for (r = 0 ; r < rows.length ; r++) { 
-        for(c = 0 ; c < cubNum ; c++) { //each loop append a div to rows[c] with class name 'cub'
+    for (let r = 0 ; r < rows.length ; r++) { 
+        for(let c = 0 ; c < cubNum ; c++) { //each loop append a div to rows[c] with class name 'cub'
             let newCub = document.createElement('div');
             newCub.classList.add('cub');
             rows[c].appendChild(newCub);
