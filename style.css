@@ -1,3 +1,23 @@
 body {
+    text-align: center;
+    background-color: rgb(46, 190, 190);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', sans-serif;
+}
 
+#container {
+    background-color: aquamarine;
+}
+
+.gridRow {
+    display: inline-block;
+    /* border: 1px solid black; */
+    
+}
+
+.cub {
+    border: 1px solid white;
+    min-width: 20px;
+    min-height: 20px;
+    display: inline-block;
+    margin-right: 2px;
 }
