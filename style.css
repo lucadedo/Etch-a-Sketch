@@ -6,10 +6,11 @@ body {
 
 #container {
     background-color: aquamarine;
+    padding: 100px;
 }
 
 .gridRow {
-    display: inline-block;
+    
     /* border: 1px solid black; */
     
 }
