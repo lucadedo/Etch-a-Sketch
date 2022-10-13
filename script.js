@@ -5,11 +5,13 @@ const container = document.getElementById('container');
 let rows = document.getElementsByClassName('gridRow');
 let cubs = document.getElementsByClassName('cub');
 
+
 // Creates a grid 16 x 16
 
 function makeGrid() {
     makeRows(16);
     makeColumns(16);
+    overOn();
 }
 
 //takes (rows, columns) and make a grid
@@ -35,4 +37,25 @@ function makeColumns(cubNum) {
         };
     };
 };
+function overOn(){
+    const test = document.querySelectorAll('div.cub');
+    let cubArr = Array.from(test);
+    console.log(cubArr);
+    cubArr.forEach((item) =>{
+        console.log(item);
+        item.addEventListener('mouseover', () =>{
+            item.style = "background-color: black";
+        })
+        
+    })
+    // forEach(cubArr).addEventListener('mouseover', () =>{
+    //  console.log("yes");
+    //  test.style = "background-color: black";
+    //  console.log(test);
+}
+    
+    
+
 makeGrid();
+
+
